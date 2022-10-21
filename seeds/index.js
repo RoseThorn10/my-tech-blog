@@ -5,7 +5,7 @@ const seedPosts = require('./postDatagit');
 const seedAll = async () => {
   await sequelize.sync({ force: true });
 
-  // await seedUsers();
+  await seedUsers();
 
   await seedPosts();
 
